@@ -1,0 +1,38 @@
+﻿@model ICE4.Models.Student
+
+<h2>Student Details</h2>
+
+<table class="table table-bordered">
+
+    <tr>
+        <th>Student ID</th>
+        <td>@Model.StudentId</td>
+    </tr>
+
+    <tr>
+        <th>Student Number</th>
+        <td>@Model.StudenNr</td>
+    </tr>
+
+    <tr>
+        <th>Name</th>
+        <td>@Model.StudentName</td>
+    </tr>
+
+    <tr>
+        <th>Surname</th>
+        <td>@Model.StudentSurname</td>
+    </tr>
+
+    <tr>
+        <th>Course</th>
+        <td>@Model.Course</td>
+    </tr>
+
+</table>
+
+<a asp-controller="Home"
+   asp-action="Index"
+   class="btn btn-primary">
+    Back to Students
+</a>
